@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+h1 {
+  color: #cc0000;
+}
+
+/* Lista de pokémons */
+#lista-pokemons {
+  list-style: none;
+  padding: 0;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+#lista-pokemons li {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+#lista-pokemons li:hover {
+  background-color: #ffe5e5;
+}
+
+/* Mensagem de erro */
+.erro {
+  color: red;
+  font-weight: bold;
+}
+
+/* Classe usada para esconder elementos */
+.escondido {
+  display: none;
+}
+
+/* Modal */
+#modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-conteudo {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 250px;
+}
+
+.modal-conteudo img {
+  width: 200px;
+  height: 200px;
+}
+
+#btn-fechar {
+  float: right;
+  cursor: pointer;
+}

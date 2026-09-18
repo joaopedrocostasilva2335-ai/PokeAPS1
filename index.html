@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Pokédex Simples</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Pokédex</h1>
+  <p>Clique em um Pokémon para ver os detalhes.</p>
+
+  <!-- Mensagem de erro (fica escondida até acontecer um erro) -->
+  <p id="mensagem-erro" class="erro escondido"></p>
+
+  <!-- Lista de pokémons vai ser preenchida pelo JavaScript -->
+  <ul id="lista-pokemons"></ul>
+
+  <!-- Modal (janela) que aparece ao clicar em um pokémon -->
+  <div id="modal" class="escondido">
+    <div class="modal-conteudo">
+      <button id="btn-fechar">Fechar</button>
+      <h2 id="modal-nome"></h2>
+      <img id="modal-imagem" src="" alt="Imagem do Pokémon">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
