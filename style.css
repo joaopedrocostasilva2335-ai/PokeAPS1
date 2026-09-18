@@ -55,6 +55,11 @@ h1 {
   align-items: center;
 }
 
+/* Essa regra precisa vir DEPOIS de "#modal" para conseguir escondê-lo */
+#modal.escondido {
+  display: none;
+}
+
 .modal-conteudo {
   background-color: white;
   padding: 20px;
