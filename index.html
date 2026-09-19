@@ -10,6 +10,9 @@
   <h1>Pokédex</h1>
   <p>Clique em um Pokémon para ver os detalhes.</p>
 
+  <!-- Campo de pesquisa pelo nome -->
+  <input type="text" id="campo-pesquisa" placeholder="Pesquisar pokémon pelo nome...">
+
   <!-- Mensagem de erro (fica escondida até acontecer um erro) -->
   <p id="mensagem-erro" class="erro escondido"></p>
 
@@ -22,6 +25,11 @@
       <button id="btn-fechar">Fechar</button>
       <h2 id="modal-nome"></h2>
       <img id="modal-imagem" src="" alt="Imagem do Pokémon">
+
+      <!-- Informações extras do pokémon -->
+      <p><strong>Altura:</strong> <span id="modal-altura"></span> m</p>
+      <p><strong>Peso:</strong> <span id="modal-peso"></span> kg</p>
+      <p><strong>Tipo(s):</strong> <span id="modal-tipos"></span></p>
     </div>
   </div>
 
