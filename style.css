@@ -7,6 +7,24 @@ body {
 
 h1 {
   color: #cc0000;
+  font-size: 2.5em;
+  margin-bottom: 5px;
+}
+
+/* Campo de pesquisa */
+#campo-pesquisa {
+  width: 100%;
+  max-width: 380px;
+  padding: 10px;
+  margin: 15px auto;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 1em;
+  outline: none;
+}
+
+#campo-pesquisa:focus {
+  border-color: #cc0000;
 }
 
 /* Lista de pokémons */
@@ -19,16 +37,20 @@ h1 {
 
 #lista-pokemons li {
   background-color: white;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px;
   margin-bottom: 8px;
   cursor: pointer;
   text-transform: capitalize;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.15s, box-shadow 0.15s;
 }
 
 #lista-pokemons li:hover {
   background-color: #ffe5e5;
+  transform: translateY(-2px);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
 }
 
 /* Mensagem de erro */
@@ -63,9 +85,16 @@ h1 {
 .modal-conteudo {
   background-color: white;
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 12px;
   text-align: center;
-  width: 250px;
+  width: 260px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.modal-conteudo h2 {
+  text-transform: capitalize;
+  color: #cc0000;
+  margin-top: 5px;
 }
 
 .modal-conteudo img {
@@ -73,7 +102,22 @@ h1 {
   height: 200px;
 }
 
+.modal-conteudo p {
+  text-align: left;
+  text-transform: capitalize;
+  margin: 6px 10px;
+}
+
 #btn-fechar {
   float: right;
   cursor: pointer;
+  border: none;
+  background-color: #cc0000;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 15px;
+}
+
+#btn-fechar:hover {
+  background-color: #a30000;
 }
